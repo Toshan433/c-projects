@@ -1,3 +1,5 @@
+# Download the CS50 library from https://github.com/cs50/libcs50
+
 #include <cs50.h>
 #include <stdio.h>
 #include <stdlib.h>
