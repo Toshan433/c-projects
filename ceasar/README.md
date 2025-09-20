@@ -1,0 +1,1 @@
+This project is a simple implementation of the Caesar cipher in C. The Caesar cipher is one of the oldest and most famous encryption techniques, where each letter in the plaintext is shifted by a fixed number of positions in the alphabet.
