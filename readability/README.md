@@ -1,0 +1,1 @@
+This program determines the reading grade level of a given text by analyzing its letters, words, and sentences. It uses the Coleman-Liau index, a formula designed to estimate the U.S. school grade needed to comprehend the text.
