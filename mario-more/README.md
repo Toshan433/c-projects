@@ -1,0 +1,1 @@
+This program creates a double half-pyramid of # symbols, similar to the pyramids in the classic Mario games. The user is asked for a height, and the program prints two pyramids side by side with a gap in the middle
