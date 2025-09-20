@@ -1,0 +1,1 @@
+This program modifies the volume of a .wav audio file. It works by reading the audio samples from the input file, multiplying them by a user-specified scaling factor, and then writing the modified samples to a new output file
