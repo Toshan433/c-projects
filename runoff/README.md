@@ -1,0 +1,1 @@
+This program simulates a ranked-choice election (also called an instant-runoff election). Instead of just voting for one candidate, each voter ranks the candidates in order of preference. The program then runs through multiple “rounds” of counting votes until a winner is found
