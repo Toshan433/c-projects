@@ -1,0 +1,1 @@
+This program is a simplified version of Scrabble scoring. Two players enter a word each, and the program calculates their scores based on the letters used. The player with the higher score wins — or it declares a tie if both scores are equal.
