@@ -9,15 +9,12 @@ int score_count(string s);
 
 int main(void)
 {
-    // Input for words
     string player1 = get_string("Player1 :");
     string player2 = get_string("Player2 :");
 
-    // Call function
     int score1 = score_count(player1);
     int score2 = score_count(player2);
 
-    // Compare the values
     if (score1 > score2)
     {
         printf("Player1 wins!\n");
@@ -32,7 +29,6 @@ int main(void)
     }
 }
 
-// Function to calculate score
 int score_count(string s)
 {
     int total_score = 0; 
