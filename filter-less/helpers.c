@@ -1,7 +1,6 @@
 #include "helpers.h"
 #include <math.h>
 
-// Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
 {
     for(int i = 0; i < height; i++)
@@ -19,7 +18,6 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     return;
 }
 
-// Convert image to sepia
 void sepia(int height, int width, RGBTRIPLE image[height][width])
 {
     for(int i = 0; i < height; i++)
@@ -42,7 +40,6 @@ void sepia(int height, int width, RGBTRIPLE image[height][width])
     return;
 }
 
-// Reflect image horizontally
 void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     for (int i = 0; i < height; i++)
@@ -57,10 +54,8 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
     return;
 }
 
-// Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    // Make a copy of the original image
 RGBTRIPLE copy[height][width];
 for (int i = 0; i < height; i++)
 {
@@ -70,7 +65,6 @@ for (int i = 0; i < height; i++)
     }
 }
 
-// Loop over each pixel in the image
 for (int i = 0; i < height; i++)
 {
     for (int j = 0; j < width; j++)
@@ -80,15 +74,13 @@ for (int i = 0; i < height; i++)
         int totalBlue = 0;
         int count = 0;
 
-        // Loop through neighboring pixels
         for (int di = -1; di <= 1; di++)
         {
 7            for (int dj = -1; dj <= 1; dj++)
             {
                 int ni = i + di;
                 int nj = j + dj;
-
-                // Check if neighbor is within bounds
+                
                 if (ni >= 0 && ni < height && nj >= 0 && nj < width)
                 {
                     totalRed += copy[ni][nj].rgbtRed;
@@ -99,7 +91,6 @@ for (int i = 0; i < height; i++)
             }
         }
 
-        // Set the pixel in original image to the average
         image[i][j].rgbtRed = round((float) totalRed / count);
         image[i][j].rgbtGreen = round((float) totalGreen / count);
         image[i][j].rgbtBlue = round((float) totalBlue / count);
